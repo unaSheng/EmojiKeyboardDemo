@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmojiKeyboardView" customModule="EmojiKeyboardDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="406"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wsg-0E-apu">
+                    <rect key="frame" x="0.0" y="0.0" width="434" height="406"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yXj-4R-Vue">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_emoji_keybaord_mask" translatesAutoresizingMaskIntoConstraints="NO" id="9cU-dj-Qpy">
+                    <rect key="frame" x="247" y="292" width="207" height="134"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy7-CN-wdO" customClass="EventTransferView" customModule="UIExtensions">
+                    <rect key="frame" x="0.0" y="322" width="434" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qch-H3-Bzc">
+                            <rect key="frame" x="266" y="0.0" width="148" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWI-h0-2Zg">
+                                    <rect key="frame" x="16" y="0.0" width="60" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="UID-5a-agl"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="keyboard_delete"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="deleteButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="PxU-2s-VLq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5L-2r-hpn">
+                                    <rect key="frame" x="88" y="0.0" width="60" height="40"/>
+                                    <color key="backgroundColor" name="PrimaryColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="1w3-AE-ugV"/>
+                                        <constraint firstAttribute="width" constant="60" id="kZK-e3-Scj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="发送">
+                                        <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="sendButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="scS-4d-iC7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="0.0"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qch-H3-Bzc" firstAttribute="top" secondItem="Oy7-CN-wdO" secondAttribute="top" id="BP7-T3-JJt"/>
+                        <constraint firstAttribute="trailing" secondItem="qch-H3-Bzc" secondAttribute="trailing" constant="20" id="HdD-jj-b2v"/>
+                        <constraint firstAttribute="bottom" secondItem="qch-H3-Bzc" secondAttribute="bottom" id="pEA-RQ-Tgl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Oy7-CN-wdO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9PV-SD-Ip0"/>
+                <constraint firstItem="Wsg-0E-apu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OxL-dO-sZs"/>
+                <constraint firstItem="Wsg-0E-apu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Pcc-MJ-ICS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Oy7-CN-wdO" secondAttribute="bottom" constant="10" id="QjW-MV-i4A"/>
+                <constraint firstAttribute="trailing" secondItem="9cU-dj-Qpy" secondAttribute="trailing" constant="-20" id="V3g-JL-8XI"/>
+                <constraint firstItem="9cU-dj-Qpy" firstAttribute="leading" secondItem="yWI-h0-2Zg" secondAttribute="leading" constant="-35" id="YV5-5t-7nb"/>
+                <constraint firstItem="Wsg-0E-apu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eoz-IJ-NHg"/>
+                <constraint firstItem="9cU-dj-Qpy" firstAttribute="top" secondItem="Oy7-CN-wdO" secondAttribute="top" constant="-30" id="h5l-Yj-Yb5"/>
+                <constraint firstAttribute="bottom" secondItem="9cU-dj-Qpy" secondAttribute="bottom" constant="-20" id="iD1-kj-Dhm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oy7-CN-wdO" secondAttribute="trailing" id="qgG-8o-0hE"/>
+                <constraint firstAttribute="bottom" secondItem="Wsg-0E-apu" secondAttribute="bottom" id="rV5-UZ-CmZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="Wsg-0E-apu" id="93O-ho-AhR"/>
+                <outlet property="deleteButton" destination="yWI-h0-2Zg" id="yQX-Mh-igK"/>
+                <outlet property="sendButton" destination="c5L-2r-hpn" id="Nha-eN-a13"/>
+            </connections>
+            <point key="canvasLocation" x="-369.56521739130437" y="179.46428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_emoji_keybaord_mask" width="41" height="24"/>
+        <image name="keyboard_delete" width="61" height="41"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.72941176470588232" green="0.99607843137254903" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

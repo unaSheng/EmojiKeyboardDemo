@@ -1,0 +1,282 @@
+[
+    {
+        "resourceName": "em101@2x.png",
+        "text": "微笑",
+        "dynamicName": "em101@2x.png"
+    },
+    {
+        "resourceName": "em102@2x.png",
+        "text": "哈哈",
+        "dynamicName": "em102@2x.png"
+    },
+    {
+        "resourceName": "em103@2x.png",
+        "text": "龇牙",
+        "dynamicName": "em103@2x.png"
+    },
+    {
+        "resourceName": "em104@2x.png",
+        "text": "偷笑",
+        "dynamicName": "em104@2x.png"
+    },
+    {
+        "resourceName": "em105@2x.png",
+        "text": "得瑟",
+        "dynamicName": "em105@2x.png"
+    },
+    {
+        "resourceName": "em106@2x.png",
+        "text": "飞吻",
+        "dynamicName": "em106@2x.png"
+    },
+    {
+        "resourceName": "em107@2x.png",
+        "text": "抠鼻",
+        "dynamicName": "em107@2x.png"
+    },
+    {
+        "resourceName": "em108@2x.png",
+        "text": "耸肩",
+        "dynamicName": "em108@2x.png"
+    },
+    {
+        "resourceName": "em109@2x.png",
+        "text": "无聊",
+        "dynamicName": "em109@2x.png"
+    },
+    {
+        "resourceName": "em110@2x.png",
+        "text": "惊讶",
+        "dynamicName": "em110@2x.png"
+    },
+    {
+        "resourceName": "em111@2x.png",
+        "text": "疑问",
+        "dynamicName": "em111@2x.png"
+    },
+    {
+        "resourceName": "em112@2x.png",
+        "text": "委屈",
+        "dynamicName": "em112@2x.png"
+    },
+    {
+        "resourceName": "em113@2x.png",
+        "text": "害羞",
+        "dynamicName": "em113@2x.png"
+    },
+    {
+        "resourceName": "em114@2x.png",
+        "text": "流汗",
+        "dynamicName": "em114@2x.png"
+    },
+    {
+        "resourceName": "em115@2x.png",
+        "text": "斜视",
+        "dynamicName": "em115@2x.png"
+    },
+    {
+        "resourceName": "em116@2x.png",
+        "text": "尴尬",
+        "dynamicName": "em116@2x.png"
+    },
+    {
+        "resourceName": "em117@2x.png",
+        "text": "鼓掌",
+        "dynamicName": "em117@2x.png"
+    },
+    {
+        "resourceName": "em118@2x.png",
+        "text": "大喊",
+        "dynamicName": "em118@2x.png"
+    },
+    {
+        "resourceName": "em119@2x.png",
+        "text": "不开心",
+        "dynamicName": "em119@2x.png"
+    },
+    {
+        "resourceName": "em120@2x.png",
+        "text": "流泪",
+        "dynamicName": "em120@2x.png"
+    },
+    {
+        "resourceName": "em121@2x.png",
+        "text": "思考",
+        "dynamicName": "em121@2x.png"
+    },
+    {
+        "resourceName": "em122@2x.png",
+        "text": "崇拜",
+        "dynamicName": "em122@2x.png"
+    },
+    {
+        "resourceName": "em123@2x.png",
+        "text": "耍酷",
+        "dynamicName": "em123@2x.png"
+    },
+    {
+        "resourceName": "em124@2x.png",
+        "text": "鼻血",
+        "dynamicName": "em124@2x.png"
+    },
+    {
+        "resourceName": "em125@2x.png",
+        "text": "调皮",
+        "dynamicName": "em125@2x.png"
+    },
+    {
+        "resourceName": "em126@2x.png",
+        "text": "魔化",
+        "dynamicName": "em126@2x.png"
+    },
+    {
+        "resourceName": "em127@2x.png",
+        "text": "不不",
+        "dynamicName": "em127@2x.png"
+    },
+    {
+        "resourceName": "em128@2x.png",
+        "text": "鄙视",
+        "dynamicName": "em128@2x.png"
+    },
+    {
+        "resourceName": "em129@2x.png",
+        "text": "口罩",
+        "dynamicName": "em129@2x.png"
+    },
+    {
+        "resourceName": "em130@2x.png",
+        "text": "鬼脸",
+        "dynamicName": "em130@2x.png"
+    },
+    {
+        "resourceName": "em131@2x.png",
+        "text": "糟糕",
+        "dynamicName": "em131@2x.png"
+    },
+    {
+        "resourceName": "em132@2x.png",
+        "text": "摸头",
+        "dynamicName": "em132@2x.png"
+    },
+    {
+        "resourceName": "em133@2x.png",
+        "text": "烦躁",
+        "dynamicName": "em133@2x.png"
+    },
+    {
+        "resourceName": "em134@2x.png",
+        "text": "囧",
+        "dynamicName": "em134@2x.png"
+    },
+    {
+        "resourceName": "em135@2x.png",
+        "text": "喜欢",
+        "dynamicName": "em135@2x.png"
+    },
+    {
+        "resourceName": "em136@2x.png",
+        "text": "挥手",
+        "dynamicName": "em136@2x.png"
+    },
+    {
+        "resourceName": "em137@2x.png",
+        "text": "砸",
+        "dynamicName": "em137@2x.png"
+    },
+    {
+        "resourceName": "em138@2x.png",
+        "text": "吐",
+        "dynamicName": "em138@2x.png"
+    },
+    {
+        "resourceName": "em139@2x.png",
+        "text": "闭嘴",
+        "dynamicName": "em139@2x.png"
+    },
+    {
+        "resourceName": "em140@2x.png",
+        "text": "晕",
+        "dynamicName": "em140@2x.png"
+    },
+    {
+        "resourceName": "em141@2x.png",
+        "text": "困",
+        "dynamicName": "em141@2x.png"
+    },
+    {
+        "resourceName": "em145@2x.png",
+        "text": "财迷",
+        "dynamicName": "em145@2x.png"
+    },
+    {
+        "resourceName": "em143@2x.png",
+        "text": "饿",
+        "dynamicName": "em143@2x.png"
+    },
+    {
+        "resourceName": "em169@2x.png",
+        "text": "奸笑",
+        "dynamicName": "em169@2x.png"
+    },
+    {
+        "resourceName": "em171@2x.png",
+        "text": "卖萌",
+        "dynamicName": "em171@2x.png"
+    },
+    {
+        "resourceName": "em153@2x.png",
+        "text": "yeah",
+        "dynamicName": "em153@2x.png"
+    },
+    {
+        "resourceName": "em172@2x.png",
+        "text": "喷水",
+        "dynamicName": "em172@2x.png"
+    },
+    {
+        "resourceName": "em142@2x.png",
+        "text": "哀",
+        "dynamicName": "em142@2x.png"
+    },
+    {
+        "resourceName": "em154@2x.png",
+        "text": "抱抱",
+        "dynamicName": "em154@2x.png"
+    },
+    {
+        "resourceName": "em146@2x.png",
+        "text": "中指",
+        "dynamicName": "em146@2x.png"
+    },
+    {
+        "resourceName": "em147@2x.png",
+        "text": "赞",
+        "dynamicName": "em147@2x.png"
+    },
+    {
+        "resourceName": "em148@2x.png",
+        "text": "弱",
+        "dynamicName": "em148@2x.png"
+    },
+    {
+        "resourceName": "em149@2x.png",
+        "text": "握手",
+        "dynamicName": "em149@2x.png"
+    },
+    {
+        "resourceName": "em150@2x.png",
+        "text": "拉勾",
+        "dynamicName": "em150@2x.png"
+    },
+    {
+        "resourceName": "em151@2x.png",
+        "text": "ok",
+        "dynamicName": "em151@2x.png"
+    },
+    {
+        "resourceName": "em152@2x.png",
+        "text": "勾引",
+        "dynamicName": "em152@2x.png"
+    }
+]

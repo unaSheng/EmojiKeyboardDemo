@@ -1,0 +1,33 @@
+{
+  "originHash" : "3099777fa36064849c08d73a5f04dcde9afa869f5bc9d1b9f897c5766aa249c3",
+  "pins" : [
+    {
+      "identity" : "keyboardlayoutguide",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/freshOS/KeyboardLayoutGuide",
+      "state" : {
+        "revision" : "b14abc2ff6a6b934b81b7004edb65f910ac68bdc",
+        "version" : "1.8.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "be0bcd7823ce56629948491f2eaeaa19979514f7",
+        "version" : "5.19.4"
+      }
+    },
+    {
+      "identity" : "uiextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://xcodeserver:HR4e_BYF1yRqeJYZnRLF@git.wemomo.com/meteor/iOS/UIExtensions.git",
+      "state" : {
+        "revision" : "4ab920bcdf08cd091491043abf73ebaa6982df05",
+        "version" : "0.0.11"
+      }
+    }
+  ],
+  "version" : 3
+}

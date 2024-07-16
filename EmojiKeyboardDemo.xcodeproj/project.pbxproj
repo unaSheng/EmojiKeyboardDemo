@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		FA765F282C44C5DA004CB0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F272C44C5DA004CB0BA /* AppDelegate.swift */; };
-		FA765F2A2C44C5DA004CB0BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F292C44C5DA004CB0BA /* SceneDelegate.swift */; };
 		FA765F2C2C44C5DB004CB0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F2B2C44C5DA004CB0BA /* ViewController.swift */; };
 		FA765F2F2C44C5DB004CB0BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA765F2E2C44C5DB004CB0BA /* Base */; };
 		FA765F312C44C5DD004CB0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA765F302C44C5DD004CB0BA /* Assets.xcassets */; };
 		FA765F342C44C5DD004CB0BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA765F332C44C5DD004CB0BA /* Base */; };
+		FA765F3D2C44C61B004CB0BA /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F3B2C44C61B004CB0BA /* EmojiKeyboard.swift */; };
+		FA765F3E2C44C61B004CB0BA /* EmojiKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA765F3C2C44C61B004CB0BA /* EmojiKeyboardView.xib */; };
+		FA765F412C44C71C004CB0BA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA765F402C44C71C004CB0BA /* SDWebImage */; };
+		FA765F432C44C71C004CB0BA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA765F422C44C71C004CB0BA /* SDWebImageMapKit */; };
+		FA765F452C44C807004CB0BA /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F442C44C807004CB0BA /* NibInstantiatable.swift */; };
+		FA765F502C44C9CC004CB0BA /* KeyboardLayoutGuide in Frameworks */ = {isa = PBXBuildFile; productRef = FA765F4F2C44C9CC004CB0BA /* KeyboardLayoutGuide */; };
+		FA765F532C44CBB5004CB0BA /* UIExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = FA765F522C44CBB5004CB0BA /* UIExtensions */; };
+		FA765F552C44CD64004CB0BA /* Emojis.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA765F542C44CD64004CB0BA /* Emojis.bundle */; };
+		FA765F572C44D0B4004CB0BA /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F562C44D0B4004CB0BA /* FlexibleTextView.swift */; };
+		FA765F592C44D165004CB0BA /* DisplayLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F582C44D165004CB0BA /* DisplayLinkHandler.swift */; };
+		FA765F5B2C44F322004CB0BA /* EmojiKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F5A2C44F322004CB0BA /* EmojiKeyboardView.swift */; };
+		FA765F6D2C46204F004CB0BA /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765F6C2C46204F004CB0BA /* CustomInputAccessoryView.swift */; };
+		FA765F6F2C46205A004CB0BA /* CustomInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA765F6E2C46205A004CB0BA /* CustomInputAccessoryView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA765F242C44C5DA004CB0BA /* EmojiKeyboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiKeyboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA765F272C44C5DA004CB0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA765F292C44C5DA004CB0BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA765F2B2C44C5DA004CB0BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA765F2E2C44C5DB004CB0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA765F302C44C5DD004CB0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA765F332C44C5DD004CB0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA765F352C44C5DD004CB0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA765F3B2C44C61B004CB0BA /* EmojiKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
+		FA765F3C2C44C61B004CB0BA /* EmojiKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiKeyboardView.xib; sourceTree = "<group>"; };
+		FA765F442C44C807004CB0BA /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
+		FA765F542C44CD64004CB0BA /* Emojis.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emojis.bundle; sourceTree = "<group>"; };
+		FA765F562C44D0B4004CB0BA /* FlexibleTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleTextView.swift; sourceTree = "<group>"; };
+		FA765F582C44D165004CB0BA /* DisplayLinkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkHandler.swift; sourceTree = "<group>"; };
+		FA765F5A2C44F322004CB0BA /* EmojiKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboardView.swift; sourceTree = "<group>"; };
+		FA765F6C2C46204F004CB0BA /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
+		FA765F6E2C46205A004CB0BA /* CustomInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputAccessoryView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA765F432C44C71C004CB0BA /* SDWebImageMapKit in Frameworks */,
+				FA765F502C44C9CC004CB0BA /* KeyboardLayoutGuide in Frameworks */,
+				FA765F532C44CBB5004CB0BA /* UIExtensions in Frameworks */,
+				FA765F412C44C71C004CB0BA /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,31 @@
 		FA765F262C44C5DA004CB0BA /* EmojiKeyboardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FA765F702C465E5B004CB0BA /* Resource */,
 				FA765F272C44C5DA004CB0BA /* AppDelegate.swift */,
-				FA765F292C44C5DA004CB0BA /* SceneDelegate.swift */,
 				FA765F2B2C44C5DA004CB0BA /* ViewController.swift */,
 				FA765F2D2C44C5DB004CB0BA /* Main.storyboard */,
 				FA765F302C44C5DD004CB0BA /* Assets.xcassets */,
+				FA765F542C44CD64004CB0BA /* Emojis.bundle */,
 				FA765F322C44C5DD004CB0BA /* LaunchScreen.storyboard */,
 				FA765F352C44C5DD004CB0BA /* Info.plist */,
 			);
 			path = EmojiKeyboardDemo;
+			sourceTree = "<group>";
+		};
+		FA765F702C465E5B004CB0BA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FA765F3B2C44C61B004CB0BA /* EmojiKeyboard.swift */,
+				FA765F5A2C44F322004CB0BA /* EmojiKeyboardView.swift */,
+				FA765F3C2C44C61B004CB0BA /* EmojiKeyboardView.xib */,
+				FA765F6C2C46204F004CB0BA /* CustomInputAccessoryView.swift */,
+				FA765F6E2C46205A004CB0BA /* CustomInputAccessoryView.xib */,
+				FA765F562C44D0B4004CB0BA /* FlexibleTextView.swift */,
+				FA765F442C44C807004CB0BA /* NibInstantiatable.swift */,
+				FA765F582C44D165004CB0BA /* DisplayLinkHandler.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,12 @@
 			dependencies = (
 			);
 			name = EmojiKeyboardDemo;
+			packageProductDependencies = (
+				FA765F402C44C71C004CB0BA /* SDWebImage */,
+				FA765F422C44C71C004CB0BA /* SDWebImageMapKit */,
+				FA765F4F2C44C9CC004CB0BA /* KeyboardLayoutGuide */,
+				FA765F522C44CBB5004CB0BA /* UIExtensions */,
+			);
 			productName = EmojiKeyboardDemo;
 			productReference = FA765F242C44C5DA004CB0BA /* EmojiKeyboardDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,11 @@
 				Base,
 			);
 			mainGroup = FA765F1B2C44C5DA004CB0BA;
+			packageReferences = (
+				FA765F3F2C44C71C004CB0BA /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				FA765F4E2C44C9CC004CB0BA /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */,
+				FA765F512C44CBB5004CB0BA /* XCRemoteSwiftPackageReference "UIExtensions" */,
+			);
 			productRefGroup = FA765F252C44C5DA004CB0BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +176,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA765F552C44CD64004CB0BA /* Emojis.bundle in Resources */,
 				FA765F312C44C5DD004CB0BA /* Assets.xcassets in Resources */,
 				FA765F342C44C5DD004CB0BA /* Base in Resources */,
+				FA765F3E2C44C61B004CB0BA /* EmojiKeyboardView.xib in Resources */,
 				FA765F2F2C44C5DB004CB0BA /* Base in Resources */,
+				FA765F6F2C46205A004CB0BA /* CustomInputAccessoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +194,12 @@
 			files = (
 				FA765F2C2C44C5DB004CB0BA /* ViewController.swift in Sources */,
 				FA765F282C44C5DA004CB0BA /* AppDelegate.swift in Sources */,
-				FA765F2A2C44C5DA004CB0BA /* SceneDelegate.swift in Sources */,
+				FA765F452C44C807004CB0BA /* NibInstantiatable.swift in Sources */,
+				FA765F6D2C46204F004CB0BA /* CustomInputAccessoryView.swift in Sources */,
+				FA765F5B2C44F322004CB0BA /* EmojiKeyboardView.swift in Sources */,
+				FA765F592C44D165004CB0BA /* DisplayLinkHandler.swift in Sources */,
+				FA765F3D2C44C61B004CB0BA /* EmojiKeyboard.swift in Sources */,
+				FA765F572C44D0B4004CB0BA /* FlexibleTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -363,6 +422,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA765F3F2C44C71C004CB0BA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.4;
+			};
+		};
+		FA765F4E2C44C9CC004CB0BA /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/KeyboardLayoutGuide";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+		FA765F512C44CBB5004CB0BA /* XCRemoteSwiftPackageReference "UIExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://xcodeserver:HR4e_BYF1yRqeJYZnRLF@git.wemomo.com/meteor/iOS/UIExtensions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA765F402C44C71C004CB0BA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA765F3F2C44C71C004CB0BA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FA765F422C44C71C004CB0BA /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA765F3F2C44C71C004CB0BA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		FA765F4F2C44C9CC004CB0BA /* KeyboardLayoutGuide */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA765F4E2C44C9CC004CB0BA /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */;
+			productName = KeyboardLayoutGuide;
+		};
+		FA765F522C44CBB5004CB0BA /* UIExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA765F512C44CBB5004CB0BA /* XCRemoteSwiftPackageReference "UIExtensions" */;
+			productName = UIExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA765F1C2C44C5DA004CB0BA /* Project object */;
 }
