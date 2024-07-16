@@ -32,7 +32,7 @@ class EmojiKeyboard: NSObject, UIGestureRecognizerDelegate {
     
     var backgroundColor: UIColor? = UIColor.systemBackground.withAlphaComponent(0.8)
     
-    var isTapTextInputToDismissEnabled: Bool = true
+    var isTapTextInputToDismissEnabled: Bool = false
     
     let activeStateDidChange = PassthroughSubject<Bool, Never>()
     
@@ -405,22 +405,13 @@ class EmojiTextView: UITextView, EmojiTextInput {
             if delegate?.textView?(self, shouldChangeTextIn: range, replacementText: pasteboardString) ?? true {
                 let font = self.font ?? UIFont.systemFont(ofSize: UIFont.systemFontSize)
                 let newAttributedString = NSAttributedString(string: pasteboardString).replacingEmojiPlaceholder(font: font)
-                insertAttributedString(newAttributedString)
+                self.textStorage.insert(newAttributedString, at: range.location)
+                self.selectedRange = NSRange(location: range.location + newAttributedString.length, length: 0)
+                resetTextStyle()
+
             }
             return
         }
         super.paste(sender)
-    }
-    
-    private func insertAttributedString(_ attributedString: NSAttributedString) {
-        let mutableAttributedString = NSMutableAttributedString(attributedString: self.attributedText)
-        var range = self.selectedRange
-        if range.location == NSNotFound {
-            range.location = self.plainText.count
-        }
-        mutableAttributedString.insert(attributedString, at: range.location)
-        self.attributedText = mutableAttributedString.copy() as? NSAttributedString
-        self.selectedRange = NSRange(location: range.location + attributedString.length, length: 0)
-        resetTextStyle()
     }
 }
