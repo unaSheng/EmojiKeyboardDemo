@@ -182,7 +182,7 @@ class FlexibleTextView: EmojiTextView {
         placeholderTextView.isHidden = !attributedText.string.isEmpty
         textDidChanged?(text.trimmingCharacters(in: .newlines))
         self.updateCaret(selectedTextRange: self.selectedTextRange)
-        self.limitTextLength()
+        self.resetTextStyle()
     }
     
     @objc private func textDidBeginEditing(_ note: Notification) {

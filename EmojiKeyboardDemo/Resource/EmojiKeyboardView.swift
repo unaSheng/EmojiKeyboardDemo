@@ -47,7 +47,7 @@ class EmojiKeyboardView: UIView, NibInstantiatable, UICollectionViewDelegate, UI
             
             let selectedBackgroundView = UIView(frame: self.bounds)
             selectedBackgroundView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            selectedBackgroundView.backgroundColor = UIColor.white
+            selectedBackgroundView.backgroundColor = UIColor.lightGray
             selectedBackgroundView.layer.cornerRadius = 10
             self.selectedBackgroundView = selectedBackgroundView
         }

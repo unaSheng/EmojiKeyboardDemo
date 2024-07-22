@@ -30,6 +30,8 @@ extension UITextField: InputViewCustomizableTextInput {
 
 class EmojiKeyboard: NSObject, UIGestureRecognizerDelegate {
     
+    var returnHandler: (() -> Void)?
+    
     var backgroundColor: UIColor? = UIColor.systemBackground.withAlphaComponent(0.8)
     
     var isTapTextInputToDismissEnabled: Bool = false
@@ -116,7 +118,8 @@ class EmojiKeyboard: NSObject, UIGestureRecognizerDelegate {
             self?.backspace()
         }
         keyboardView.returnHandler = { [weak self] in
-            self?.inputText("\n")
+//            self?.inputText("\n")
+            self?.returnHandler?()
         }
         keyboardView.backgroundColor = self.backgroundColor
         self.textInput?.inputView = keyboardView
@@ -214,12 +217,12 @@ extension EmojiKeyboard {
         }
         
         override func attachmentBounds(for textContainer: NSTextContainer?, proposedLineFragment lineFrag: CGRect, glyphPosition position: CGPoint, characterIndex charIndex: Int) -> CGRect {
-            let font: UIFont
-            if textContainer?.responds(to: NSSelectorFromString("textView")) == true && textContainer?.value(forKey: "textView") != nil {
-                font = textContainer?.layoutManager?.textStorage?.attributes(at: charIndex, effectiveRange: nil)[.font] as? UIFont ?? self.font
-            } else {
-                font = self.font
-            }
+            let font: UIFont = self.font
+//            if textContainer?.responds(to: NSSelectorFromString("textView")) == true && textContainer?.value(forKey: "textView") != nil {
+//                font = textContainer?.layoutManager?.textStorage?.attributes(at: charIndex, effectiveRange: nil)[.font] as? UIFont ?? self.font
+//            } else {
+//                font = self.font
+//            }
             var rect: CGRect = .zero
             rect.origin.y = font.descender * 1.06
             rect.size.height = (font.lineHeight) * 1.03
@@ -297,7 +300,7 @@ extension EmojiKeyboard {
         return text
     }
     
-    fileprivate static func plainTextWithEmojiPlaceholder(from emojiAttributedString: NSAttributedString) -> String {
+    static func plainTextWithEmojiPlaceholder(from emojiAttributedString: NSAttributedString) -> String {
         var text = emojiAttributedString.string
         emojiAttributedString.enumerateAttribute(.attachment, in: NSRange(location: 0, length: (text as NSString).length), options: [.reverse], using: { obj, range, _ in
             if let emoji = (obj as? EmojiAttachment)?.emoji {
@@ -404,9 +407,9 @@ class EmojiTextView: UITextView, EmojiTextInput {
             }
             if delegate?.textView?(self, shouldChangeTextIn: range, replacementText: pasteboardString) ?? true {
                 let font = self.font ?? UIFont.systemFont(ofSize: UIFont.systemFontSize)
-                let newAttributedString = NSAttributedString(string: pasteboardString).replacingEmojiPlaceholder(font: font)
-                self.textStorage.insert(newAttributedString, at: range.location)
-                self.selectedRange = NSRange(location: range.location + newAttributedString.length, length: 0)
+                    let newAttributedString = NSAttributedString(string: pasteboardString).replacingEmojiPlaceholder(font: font)
+                    self.textStorage.insert(newAttributedString, at: range.location)
+                    self.selectedRange = NSRange(location: range.location + newAttributedString.length, length: 0)
                 resetTextStyle()
 
             }
